@@ -95,6 +95,15 @@
     justify-content: flex-end;
   }
 
+  .navbar-actions i{
+    cursor: pointer;
+  }
+
+  .navbar-gender li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
   /* Main */
   .row{
     display: flex;
@@ -108,12 +117,37 @@
 
   .card{
     position: relative;
+    cursor: pointer;
   }
 
   .card > img{
     width: 100%;
   }
 
+  #first-product > img:hover{
+    content:url(img/1b.webp);
+  }
+
+  #second-product > img:hover{
+    content:url(img/2b.webp);
+  }
+  
+  #third-product > img:hover{
+    content:url(img/3b.webp);
+  }
+  
+  #fourth-product > img:hover{
+    content:url(img/4b.webp);
+  }
+  
+  #fifth-product > img:hover{
+    content:url(img/5b.webp);
+  }
+  
+  #sixth-product > img:hover{
+    content:url(img/6b.webp);
+  }
+  
   .discount, .sustainability{
     color: var(--white);
     padding: 5px 10px;
@@ -122,9 +156,9 @@
     bottom: 60px;
   }
 
-  .card::after{
-    content: '\2665';
+  .heart{
     background: var(--white);
+    color: var(--black);
     font-size: 15px;
     padding: 1px 6px;
     border-right-color: var(--white);
@@ -133,6 +167,10 @@
     right: 0;
   }
 
+  .heart:hover{
+    color: var(--red);
+  }
+  
   .img-description{
     position: relative;
     bottom: 20px;
@@ -161,7 +199,6 @@
   }
 
   /* Footer */
-
   .footer-company h3{
     padding: 10px 0;
   }
@@ -199,5 +236,6 @@
     font-size: 25px;
     padding: 5px;
     padding-right: 0;
+    cursor: pointer;
   }
 

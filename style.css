@@ -37,6 +37,7 @@
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
   }
 
   main{
@@ -58,6 +59,14 @@
 
   li{
     padding: 5px;
+  }
+
+  .bg-red{
+    background-color: var(--red);
+  }
+
+  .bg-green{
+    background-color: var(--green);
   }
 
   /* Navbar */
@@ -86,8 +95,6 @@
     justify-content: flex-end;
   }
 
-  
-
   /* Main */
   .row{
     display: flex;
@@ -97,8 +104,11 @@
   .column{
     flex-basis: calc(100% / 3);
     min-height: 400px;
-    background-color: var(--red);
     margin-bottom: 3px;
+  }
+
+  .card{
+    position: relative;
   }
 
   .under-column{
@@ -111,6 +121,18 @@
     gap: 30px;
     height: 50px;
     margin-bottom: 50px;
+  }
+
+  .card > img{
+    width: 100%;
+  }
+
+  .discount, .sustainability{
+    color: var(--white);
+    padding: 5px 10px;
+    position: relative;
+    left:0;
+    bottom: 60px;
   }
 
   /* Footer */

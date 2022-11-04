@@ -50,23 +50,43 @@
     padding: 20px;
     display: flex;
   }
+
+  ul{
+    list-style-type: none;
+    display: flex;
+  }
+
+  li{
+    padding: 5px;
+  }
+
   /* Navbar */
   .navbar{
-    background-color: black;
+    height: 80px;
     flex-basis: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .navbar > *{
-    padding: 10px;
     flex-basis: 20%;
-    text-align: center;
   }
 
   .navbar-logo{
     flex-grow: 1;
+    text-align: center;
   }
+
+  .navbar-logo > img{
+    height: 20px;
+  }
+
+  .navbar-actions > ul{
+    justify-content: flex-end;
+  }
+
+  
 
   /* Main */
   .row{
@@ -99,6 +119,7 @@
     align-items: center;
     justify-content: center;
     flex-basis: 100%;
+    gap: 10px;
   }
 
   .footer-company{

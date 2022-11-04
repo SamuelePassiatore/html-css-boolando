@@ -1,5 +1,11 @@
 /* Custom properties */
 :root{
+    --orange: #FF6900;
+    --white: #FFFFFF;
+    --black: #000000;
+    --red: #FF0000;
+    --green: #008000;
+    --dark-blue: #1A1A1A;
   }
   
   /* Reset */
@@ -19,7 +25,29 @@
     max-width: 1000px;
     margin: 0 auto;
   }
-  
-  .flex {
+
+  header{
+    background-color: var(--orange);
+    color: var(--white);
+    min-height: 80px;
     display: flex;
+    align-items: center;
+  }
+
+  /* Navbar */
+  .navbar{
+    background-color: black;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar > *{
+    padding: 10px;
+    flex-basis: 20%;
+    text-align: center;
+  }
+
+  .navbar-logo{
+    flex-grow: 1;
   }

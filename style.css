@@ -1,5 +1,5 @@
-/* Custom properties */
-:root{
+  /* Custom properties */
+  :root{
     --orange: #FF6900;
     --white: #FFFFFF;
     --black: #000000;
@@ -18,7 +18,7 @@
   /* Generics */
   body {
     font-family: sans-serif;
-    padding-top: 120px;
+    padding-top: 150px;
   }
   
   /* Utils */
@@ -30,7 +30,7 @@
   header{
     background-color: var(--orange);
     color: var(--white);
-    height: 80px;
+    height: 100px;
     display: flex;
     align-items: center;
     position: fixed;
@@ -43,7 +43,13 @@
     background-color: var(--white);
   }
 
-
+  footer{
+    background-color: var(--black);
+    height: 150px;
+    color: var(--white);
+    padding: 20px;
+    display: flex;
+  }
   /* Navbar */
   .navbar{
     background-color: black;
@@ -86,3 +92,25 @@
     height: 50px;
     margin-bottom: 50px;
   }
+
+  /* Footer */
+  .footer-information{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 100%;
+  }
+
+  .footer-company{
+    background-color: yellowgreen;
+    height: 100px;
+    flex-basis: 50%;
+  }
+
+  .footer-social{
+    background-color: brown;
+    height: 100px;
+    flex-basis: 50%;
+    text-align: right;
+  }
+

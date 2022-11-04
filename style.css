@@ -18,6 +18,7 @@
   /* Generics */
   body {
     font-family: sans-serif;
+    padding-top: 120px;
   }
   
   /* Utils */
@@ -29,10 +30,19 @@
   header{
     background-color: var(--orange);
     color: var(--white);
-    min-height: 80px;
+    height: 80px;
     display: flex;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
   }
+
+  main{
+    background-color: var(--white);
+  }
+
 
   /* Navbar */
   .navbar{
@@ -50,4 +60,29 @@
 
   .navbar-logo{
     flex-grow: 1;
+  }
+
+  /* Main */
+  .row{
+    display: flex;
+    gap: 30px;
+  }
+
+  .column{
+    flex-basis: calc(100% / 3);
+    min-height: 400px;
+    background-color: var(--red);
+    margin-bottom: 3px;
+  }
+
+  .under-column{
+    background-color: var(--green);
+    flex-basis: calc(100% / 3);
+  }
+
+  .under-row{
+    display: flex;
+    gap: 30px;
+    height: 50px;
+    margin-bottom: 50px;
   }

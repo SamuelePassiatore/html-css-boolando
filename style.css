@@ -18,7 +18,7 @@
   /* Generics */
   body {
     font-family: sans-serif;
-    padding-top: 130px;
+    padding-top: 110px;
   }
   
   /* Utils */
@@ -30,7 +30,7 @@
   header{
     background-color: var(--orange);
     color: var(--white);
-    height: 100px;
+    height: 80px;
     display: flex;
     align-items: center;
     position: fixed;
@@ -38,6 +38,7 @@
     left: 0;
     right: 0;
     z-index: 5;
+    box-shadow: 0 0 5px var(--black);
   }
 
   main{
@@ -45,8 +46,8 @@
   }
 
   footer{
-    background-color: var(--black);
-    height: 150px;
+    background-color: var(--dark-blue);
+    height: 130px;
     color: var(--white);
     padding: 20px;
     display: flex;
@@ -89,6 +90,7 @@
 
   .navbar-logo > img{
     height: 20px;
+    cursor: pointer;
   }
 
   .navbar-actions > ul{
@@ -236,6 +238,11 @@
     font-size: 25px;
     padding: 5px;
     padding-right: 0;
+    cursor: pointer;
+  }
+
+  .footer-company li:hover{
+    text-decoration: underline;
     cursor: pointer;
   }
 

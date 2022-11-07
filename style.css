@@ -125,30 +125,6 @@
   .card > img{
     width: 100%;
   }
-
-  #first-product > img:hover{
-    content:url(img/1b.webp);
-  }
-
-  #second-product > img:hover{
-    content:url(img/2b.webp);
-  }
-  
-  #third-product > img:hover{
-    content:url(img/3b.webp);
-  }
-  
-  #fourth-product > img:hover{
-    content:url(img/4b.webp);
-  }
-  
-  #fifth-product > img:hover{
-    content:url(img/5b.webp);
-  }
-  
-  #sixth-product > img:hover{
-    content:url(img/6b.webp);
-  }
   
   .discount, .sustainability{
     color: var(--white);
@@ -167,6 +143,18 @@
     position: absolute;
     top: 5px;
     right: 0;
+  }
+
+  .card .img-hover{
+    display: none;
+  }
+
+  .card:hover .img-hover{
+    display: block;
+  }
+
+  .card:hover .img-main{
+    display: none;
   }
 
   .heart:hover{
